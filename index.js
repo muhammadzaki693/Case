@@ -17,6 +17,9 @@ class TextCase {
 	lower(str){
 	  console.log(str.toLowerCase())
 	}
+	param(str){
+	  console.log(str.split(' ').join('-'))
+	}
 }
 const textcase = new TextCase();
 textcase.dot('bruh ga bisa');
@@ -25,3 +28,4 @@ textcase.upper('g');
 textcase.no('bidhxnd duhdhd jdGjd');
 textcase.upper('gygfftfg');
 textcase.lower("G")
+textcase.param("bruh ")
