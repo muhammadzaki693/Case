@@ -27,10 +27,10 @@ class TextCase {
 	  console.log(str.split('').reverse().join(''))
 	}
 	lowerfirst(str){
-	  console.log(str[0].toLowerCase() + str.slice(1).toUpperCase())
+	  console.log(str.charAt(0).toLowerCase() + str.substr(1))
 	}
 	upperfirst(str){
-	  console.log(str[0].toUpperCase() + str.slice(1).toLowerCase())
+	  console.log(str.charAt(0).toUpperCase() + str.substr(1))
 	}
 	constanta(str){
 	  str = str.split(' ').join('_').toUpperCase()
@@ -56,8 +56,4 @@ class TextCase {
 	}
 }
 const textcase = new TextCase();
-console.log("s  a  t  o  r")
-textcase.reverses("o  p  e  r  a")
-console.log("t  e  n  e  t")
-console.log("o  p  e  r  a")
-textcase.reverses("s  a  t  o  r")
+textcase.constanta("bruh bro")
